@@ -25,7 +25,7 @@ class ProjectAliasesController < ApplicationController
     end
 
     def create
-        @alias = ProjectAlias.new(params.require(:project_alias).permit(:project,:alias))
+        @alias = ProjectAlias.new(params.require(:project_alias).permit(:project_id,:alias))
         if @alias.save
             flash[:notice] = l(:notice_successful_create)
             redirect_to(:action => 'index')
