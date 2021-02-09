@@ -2,7 +2,7 @@ class ProjectAliasesController < ApplicationController
     layout 'admin'
     self.main_menu = false if self.respond_to?(:main_menu)
 
-    before_filter :require_admin
+    before_action :require_admin
 
     helper :sort
     include SortHelper
