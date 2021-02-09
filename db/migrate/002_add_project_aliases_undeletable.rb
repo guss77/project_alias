@@ -1,4 +1,4 @@
-class AddProjectAliasesUndeletable < ActiveRecord::Migration
+class AddProjectAliasesUndeletable < ActiveRecord::Migration[4.2]
 
     def self.up
         add_column :project_aliases, :undeletable, :boolean, :default => false, :null => false

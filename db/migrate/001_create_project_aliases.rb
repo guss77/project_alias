@@ -1,4 +1,4 @@
-class CreateProjectAliases < ActiveRecord::Migration
+class CreateProjectAliases < ActiveRecord::Migration[4.2]
 
     def self.up
         create_table :project_aliases do |t|
